@@ -1,8 +1,8 @@
 # Repositorio de la asignatura Infraestructura Virtual ☁️ 📱
-📝 Infraestructura Virtual
-🎓 Grado en Ingeniería Informática
-🏫 Universidad de Granada
-✒️ Eduardo Segura Richart
+📝 Infraestructura Virtual  
+🎓 Grado en Ingeniería Informática  
+🏫 Universidad de Granada  
+✒️ Eduardo Segura Richart  
 
 # OpoTests 👨‍🎓 📑
 ## Problema 😟
