@@ -4,7 +4,7 @@
 🏫 Universidad de Granada  
 ✒️ Eduardo Segura Richart  
 
-# OpoTests 👨‍🎓 📑
+# *OpoTests* 👨‍🎓 📑
 ## Problema 😟
 Debido a la situación actual, hay una gran cantidad de estudiantes que se decantan por estudiar una oposición para labrarse un futuro. Muchas de las oposiciones que se convocan en España evalúan a los candidatos con exámenes de tipo test.
 
