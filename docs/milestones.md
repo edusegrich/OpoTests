@@ -4,7 +4,7 @@ A continuación se detallan los [hitos](https://github.com/edusegrich/OpoTests/m
   
 Milestone | Descripción | HU | Estado
 ----------|-------------|----|-------
-  1️⃣ | [Creación de tests](https://github.com/edusegrich/OpoTests/milestone/1) | [HU1](https://github.com/edusegrich/OpoTests/issues/2) | ❌
+1️⃣ | [Creación de tests](https://github.com/edusegrich/OpoTests/milestone/1) | [HU1](https://github.com/edusegrich/OpoTests/issues/2) | ❌
 2️⃣ | [Realización de tests](https://github.com/edusegrich/OpoTests/milestone/2) | [HU2](https://github.com/edusegrich/OpoTests/issues/3) | ❌
 3️⃣ | [Generación de tests de una oposición determinada](https://github.com/edusegrich/OpoTests/milestone/3) | [HU3](https://github.com/edusegrich/OpoTests/issues/4) | ❌
 4️⃣ | [Generación de tests que abarquen todo el temario de una oposición](https://github.com/edusegrich/OpoTests/milestone/4) | [HU4](https://github.com/edusegrich/OpoTests/issues/5) | ❌
