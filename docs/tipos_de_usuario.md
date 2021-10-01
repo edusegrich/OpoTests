@@ -24,4 +24,4 @@ Ejemplos de usuarios:
   - Habituado al uso de tecnologías.  
 
 ### Historias de usuario 📜
-Las historias de usuario (HU) se pueden consultar [aquí](https://github.com/edusegrich/OpoTests/issues).
+Las historias de usuario (HU) se pueden consultar [aquí](https://github.com/edusegrich/OpoTests/issues?q=is%3Aopen+is%3Aissue+label%3Auser-stories).
