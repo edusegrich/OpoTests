@@ -22,3 +22,6 @@ Ejemplos de usuarios:
   - 41 años.
   - Estudios de licenciatura.
   - Habituado al uso de tecnologías.  
+
+### Historias de usuario 📜
+Las historias de usuario (HU) se pueden consultar [aquí](https://github.com/edusegrich/OpoTests/issues).
