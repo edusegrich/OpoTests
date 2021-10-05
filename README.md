@@ -14,8 +14,8 @@ La idea de este proyecto es hacer una aplicación que genere exámenes tipo test
 ## Documentación 📋 📂
 En el subdirectorio *docs* se puede consultar la [documentación](https://github.com/edusegrich/OpoTests/tree/Objetivo-1/docs) acerca del proyecto.
 
-### Hitos o Milestones 🚩
-Se pueden consultar los [milestones](https://github.com/edusegrich/OpoTests/blob/Objetivo-1/docs/milestones.md) del proyecto, así como el estado en el que se encuentra cada uno.
-
 ### Usuarios 🧑‍🤝‍🧑
 Información acerca de los [usuarios](https://github.com/edusegrich/OpoTests/blob/Objetivo-1/docs/tipos_de_usuario.md) y la función de cada uno de ellos en la aplicación.
+
+### Hitos o Milestones 🚩
+Se pueden consultar los [milestones](https://github.com/edusegrich/OpoTests/blob/Objetivo-1/docs/milestones.md) del proyecto, así como el estado en el que se encuentra cada uno.
