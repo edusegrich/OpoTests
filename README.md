@@ -3,7 +3,6 @@
 🎓 Grado en Ingeniería Informática  
 🏫 Universidad de Granada  
 ✒️ Eduardo Segura Richart  
-![Logo ETSIIT](Downloads/etsiit.png)
 
 # *OpoTests* 👨‍🎓 📑
 ## Problema 😟
