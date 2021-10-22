@@ -1,6 +1,6 @@
 # Hitos o Milestones 🚩
 
-A continuación se detallan los [hitos](https://github.com/edusegrich/OpoTests/milestones) del proyecto.  
+A continuación se detallan los [hitos](https://github.com/edusegrich/OpoTests/milestones?direction=asc&sort=title&state=open) del proyecto.  
   
 Milestone | Descripción | HU | Estado
 ----------|-------------|----|-------
