@@ -19,3 +19,6 @@ Información acerca de los [usuarios](https://github.com/edusegrich/OpoTests/blo
 
 ### Hitos o Milestones 🚩
 Se pueden consultar los [milestones](https://github.com/edusegrich/OpoTests/blob/Objetivo-1/docs/milestones.md) del proyecto, así como el estado en el que se encuentra cada uno.
+
+### Lenguaje del proyecto
+Se puede consultar la [justificación](https://github.com/aleveji/OpoTests/blob/Objetivo-2/docs/justificacion_eleccion_lenguaje.md) de la elección del lenguaje del proyecto.
