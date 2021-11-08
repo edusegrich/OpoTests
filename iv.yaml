@@ -1,4 +1,5 @@
 lenguaje: python
-entidad: opotests/Oposicion.py
-entidad: opotests/Tema.py
-entidad: opotests/Pregunta.py
+entidad:
+ - opotests/Oposicion.py
+ - opotests/Tema.py
+ - opotests/Pregunta.py
