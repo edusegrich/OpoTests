@@ -6,15 +6,14 @@ class Tema:
 
     Attributes
     ----------
-    id : int
-        identificador del tema
     titulo : str
-        titulo del tema
-    descripcion : str
-        descripcion del contenido del tema
+        titulo del tema que servirá como identificador
     """
 
-    def __init__(self, id, titulo, descripcion):
-        self.id = id
-        self.titulo = titulo
-        self.descripcion = descripcion
+    def __init__(self, titulo):
+        self.__titulo = titulo
+    
+    @property
+    def titulo(self):
+        """Devuelve el titulo del Tema"""
+        return self.__titulo
