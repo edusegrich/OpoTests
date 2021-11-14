@@ -1,3 +1,4 @@
+from Grupo import Grupo
 from datetime import date
 
 class Oposicion:
@@ -10,16 +11,28 @@ class Oposicion:
     ----------
     titulo : str
         titulo de la oposición que servirá como identificador
+    grupo : Grupo
+        grupo de la oposición
     temas : list
         lista que contiene los temas que componen la oposición
     fecha : date
         fecha en la que tendrá lugar el examen de la oposición
     """
 
-    def __init__(self, titulo, temas, fecha):
+    def __init__(self, titulo, grupo, temas, fecha):
         self.__titulo = titulo
+
+        if type(grupo) is Grupo:
+            self.__grupo = grupo
+        else:
+            raise TypeError ("El atributo 'grupo' debe ser del tipo Grupo")
+        
         self.__temas = temas
-        self.__fecha = fecha
+
+        if type(fecha) is date:
+            self.__fecha = fecha
+        else:
+            raise TypeError ("El atributo 'fecha' debe ser del tipo date")
     
     @property
     def titulo(self):
