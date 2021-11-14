@@ -1,3 +1,5 @@
+from Dificultad import Dificultad
+
 class Pregunta:
     """
     Clase utilizada para representar una Pregunta de un Tema
@@ -16,7 +18,7 @@ class Pregunta:
         diferentes opciones de respuesta de la pregunta
     resp_correcta : int
         indice de la respuesta correcta en el diccionario de respuestas
-    dificultad : str
+    dificultad : Dificultad
         dificultad de la pregunta
     """
 
@@ -26,7 +28,11 @@ class Pregunta:
         self.__enunciado = enunciado
         self.__respuestas = respuestas
         self.__resp_correcta = resp_correcta
-        self.__dificultad = dificultad
+
+        if type(dificultad) is Dificultad:
+            self.__dificultad = dificultad
+        else:
+            raise TypeError("El atributo 'dificultad' debe ser de tipo Dificultad")
 
     @property
     def id(self):
