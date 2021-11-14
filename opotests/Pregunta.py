@@ -8,8 +8,8 @@ class Pregunta:
     ----------
     id : int
         identificador de la pregunta
-    idTema : int
-        identificador del tema al que pertenece la pregunta
+    tema : int
+        tema al que pertenece la pregunta
     enunciado : str
         enunciado de la pregunta
     respuestas : dict
@@ -20,10 +20,19 @@ class Pregunta:
         dificultad de la pregunta
     """
 
-    def __init__(self, id, idTema, enunciado, respuestas, resp_correcta, dificultad):
-        self.id = id
-        self.idTema = idTema
-        self.enunciado = enunciado
-        self.respuestas = respuestas
-        self.resp_correcta = resp_correcta
-        self.dificultad = dificultad
+    def __init__(self, id, tema, enunciado, respuestas, resp_correcta, dificultad):
+        self.__id = id
+        self.__tema = tema
+        self.__enunciado = enunciado
+        self.__respuestas = respuestas
+        self.__resp_correcta = resp_correcta
+        self.__dificultad = dificultad
+
+    @property
+    def id(self):
+        """Devuelve el identificador de la Pregunta"""
+        return self.__id
+    
+    def add_respuesta(self, respuesta):
+        """Añade una opción de respuesta a la Pregunta"""
+        pass
