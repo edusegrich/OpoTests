@@ -1,4 +1,4 @@
-from Grupo import Grupo
+from grupo import Grupo
 from datetime import date
 
 class Oposicion:
