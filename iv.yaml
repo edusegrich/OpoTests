@@ -1,5 +1,5 @@
 lenguaje: python
 entidad:
- - opotests/Oposicion.py
- - opotests/Tema.py
- - opotests/Pregunta.py
+ - opotests/oposicion.py
+ - opotests/tema.py
+ - opotests/pregunta.py
