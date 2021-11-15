@@ -1,4 +1,4 @@
-from Dificultad import Dificultad
+from dificultad import Dificultad
 
 class Pregunta:
     """
