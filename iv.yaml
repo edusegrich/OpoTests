@@ -1,0 +1,5 @@
+lenguaje: python
+entidad:
+ - opotests/oposicion.py
+ - opotests/tema.py
+ - opotests/pregunta.py
