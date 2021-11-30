@@ -1,5 +1,8 @@
 lenguaje: python
 entidad:
- - opotests/oposicion.py
- - opotests/tema.py
- - opotests/pregunta.py
+    - src/oposicion.py
+    - src/tema.py
+    - src/pregunta.py
+automatizar:
+    fichero: tasks.py
+    orden: invoke
