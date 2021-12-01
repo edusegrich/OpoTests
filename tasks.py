@@ -1,7 +1,7 @@
 from invoke import task, run
 
 @task
-def check_syntax(c):
+def syntax(c):
     """
     Tarea para comprobar la sintaxis de los ficheros fuente.
     """
