@@ -15,17 +15,14 @@ La idea de este proyecto es hacer una aplicación que genere exámenes tipo test
 ## Instalación 🛠️ 💿 🖥️
 A continuación se detallan los pasos a seguir para la instalación del proyecto.  
   
-Lo primero que debes hacer es [instalar Poetry](https://python-poetry.org/docs/#installation), el gestor de dependencias del proyecto. Para ello, abre una terminal y ejecuta el siguiente comando:  
-```
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
-```
+Lo primero que debes hacer es [instalar Poetry](https://python-poetry.org/docs/#installation), el gestor de dependencias del proyecto. Para ello, sigue las indicaciones que se dan [aquí](https://github.com/python-poetry/poetry#installation).
   
 Ahora deberás clonar el repositorio con la orden:  
 ```
 git clone git@github.com:edusegrich/OpoTests
 ```
   
-A continuación, colócate en el directorio raíz y ejecuta la orden de **Poetry** para instalar las dependencias.
+A continuación, colócate en el directorio raíz del proyecto y ejecuta la orden de **Poetry** para instalar las dependencias.
 ```
 cd OpoTests
 ```
