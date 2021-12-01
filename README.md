@@ -17,7 +17,7 @@ A continuación se detallan los pasos a seguir para la instalación del proyecto
   
 Lo primero que debes hacer es [instalar Poetry](https://python-poetry.org/docs/#installation), el gestor de dependencias del proyecto. Para ello, sigue las indicaciones que se dan [aquí](https://github.com/python-poetry/poetry#installation).
   
-Ahora deberás clonar el repositorio con la orden:  
+Una vez instalado Poetry, deberás clonar el repositorio con la orden:  
 ```
 git clone git@github.com:edusegrich/OpoTests
 ```
