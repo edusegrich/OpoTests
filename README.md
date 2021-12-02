@@ -62,3 +62,9 @@ Se pueden consultar los [milestones](https://github.com/edusegrich/OpoTests/blob
 
 ##### Lenguaje del proyecto
 Se puede consultar la [justificación](https://github.com/aleveji/OpoTests/blob/Objetivo-2/docs/justificacion_eleccion_lenguaje.md) de la elección del lenguaje del proyecto.
+
+##### Gestor de dependencias
+Se puede consultar la justificación de la elección del [gestor de dependencias](https://github.com/edusegrich/OpoTests/blob/Objetivo-3/docs/justificacion_gestor_dependencias.md) del proyecto.
+
+##### Gestor de tareas
+Se puede consultar la justificación de la elección del [gestor de tareas](https://github.com/edusegrich/OpoTests/blob/Objetivo-3/docs/justificacion_gestor_tareas.md) del proyecto.
