@@ -9,7 +9,6 @@ repository = "https://github.com/edusegrich/OpoTests"
 [tool.poetry.dependencies]
 python = "^3.8"
 pytest = "^6.2.5"
-invoke = "^1.6.0"
 pylint = "^2.12.1"
 
 [tool.poetry.dev-dependencies]
