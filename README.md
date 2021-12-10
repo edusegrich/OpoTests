@@ -35,7 +35,7 @@ invoke installpoetry
   
 Una vez instalado Poetry, lo último que tenemos que hacer es instalar las dependencias del proyecto ejecutando:  
 ```
-invoke installdependencies
+invoke installdeps
 ```
 
 En este punto el proyecto ya está listo para su uso.
@@ -43,7 +43,7 @@ En este punto el proyecto ya está listo para su uso.
 ## Guía de uso
 Si quieres comprobar la sintaxis de los ficheros fuente, ejecuta el siguiente comando:
 ```
-invoke syntax
+invoke lint
 ```
   
 Si quieres lanzar los tests, ejecuta el siguiente comando:
