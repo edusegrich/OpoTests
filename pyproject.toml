@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "OpoTests"
+version = "0.1.0"
+description = "Gestión de dependencias para el proyecto de OpoTests"
+authors = ["Eduardo Segura Richart <edusr@correo.ugr.es>"]
+license = "GPL-3.0.0-only"
+repository = "https://github.com/edusegrich/OpoTests"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^6.2.5"
+pylint = "^2.12.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
