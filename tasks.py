@@ -16,7 +16,7 @@ def installdependencies(c):
     run("poetry install")
 
 @task
-def syntax(c):
+def lint(c):
     """
     Tarea para comprobar la sintaxis de los ficheros fuente.
     """
