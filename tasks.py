@@ -9,7 +9,7 @@ def installpoetry(c):
     run("curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -")
 
 @task
-def installdependencies(c):
+def installdeps(c):
     """
     Tarea para instalar las dependencias del proyecto
     """
