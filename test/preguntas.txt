@@ -1,0 +1,1 @@
+1,Constitución Española,¿En qué año se redactó la Constitución Española?,{'1': '1975', '2': '1978', '3': '1974', '4': '1980'},2,Bajo
