@@ -1,4 +1,4 @@
-from dificultad import Dificultad
+from opotests.dificultad import Dificultad
 
 class Pregunta:
     """
@@ -38,6 +38,26 @@ class Pregunta:
     def id(self):
         """Devuelve el identificador de la Pregunta"""
         return self.__id
+
+    @property
+    def tema(self):
+        """Devuelve el tema de la Pregunta"""
+        return self.__tema
+
+    @property
+    def respuestas(self):
+        """Devuelve las respuestas de la Pregunta"""
+        return self.__respuestas
+
+    @property
+    def resp_correcta(self):
+        """Devuelve la respuesta correcta de la Pregunta"""
+        return self.__resp_correcta
+
+    @property
+    def dificultad(self):
+        """Devuelve la dificultad de la Pregunta"""
+        return self.__dificultad
     
     def add_respuesta(self, respuesta):
         """Añade una opción de respuesta a la Pregunta"""
