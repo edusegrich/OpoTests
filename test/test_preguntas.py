@@ -1,0 +1,59 @@
+import pytest
+from assertpy import assert_that
+
+from importar import *
+from opotests.pregunta import Pregunta
+from opotests.dificultad import Dificultad
+
+@pytest.fixture
+def datos_pregunta():
+    datos = importar_pregunta('preguntas.txt')
+    return datos
+
+@pytest.fixture
+def pregunta():
+    return Pregunta(datos_pregunta)
+
+def test_estado_pregunta():
+    """
+    Test para comprobar que la pregunta tiene los atributos correctos
+    """
+    # Comprobamos que la pregunta no esta vacia
+    assert_that(pregunta).is_not_empty()
+
+    # Comprobamos que la pregunta tiene un id
+    assert_that(pregunta.id).is_instance_of(int)
+    assert_that(pregunta.id).is_not_none()
+
+    # Comprobamos que la pregunta tiene un tema asignado
+    assert_that(pregunta.tema).is_instance_of(str)
+    assert_that(pregunta.tema).is_not_empty()
+
+    # Comprobamos que la pregunta tiene respuestas
+    test_respuestas(pregunta)
+
+    # Comprobamos que la pregunta tiene una respuesta correcta
+    test_respuesta_correcta(pregunta)
+
+    # Comprobamos que la pregunta tiene una dificultad entre las posibles
+    test_dificultad(pregunta)
+    
+def test_respuestas(pregunta):
+    """
+    Test para comprobar que la pregunta tiene respuestas
+    """
+    assert_that(pregunta.respuestas).is_not_empty()
+    assert_that(pregunta.respuestas).is_instance_of(dict)
+
+def test_respuesta_correcta(pregunta):
+    """
+    Test para comprobar que la pregunta tiene una respuesta correcta asignada entre las posibles
+    """
+    assert_that(pregunta.resp_correcta).is_in(pregunta.respuestas.keys())
+
+def test_dificultad(pregunta):
+    """
+    Test para comprobar que la dificultad de una pregunta es una de las posibles
+    """
+    assert_that(pregunta.dificultad).is_in(Dificultad.Alto, Dificultad.Medio, Dificultad.Bajo)
+
