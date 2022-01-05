@@ -1,5 +1,5 @@
-from grupo import Grupo
-from datetime import date
+from opotests.grupo import Grupo
+from datetime import datetime
 
 class Oposicion:
     """
@@ -15,7 +15,7 @@ class Oposicion:
         grupo de la oposición
     temas : list
         lista que contiene los temas que componen la oposición
-    fecha : date
+    fecha : datetime
         fecha en la que tendrá lugar el examen de la oposición
     """
 
@@ -29,10 +29,10 @@ class Oposicion:
         
         self.__temas = temas
 
-        if type(fecha) is date:
+        if type(fecha) is datetime:
             self.__fecha = fecha
         else:
-            raise TypeError ("El atributo 'fecha' debe ser del tipo date")
+            raise TypeError ("El atributo 'fecha' debe ser del tipo datetime")
     
     @property
     def titulo(self):
