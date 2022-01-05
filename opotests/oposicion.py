@@ -39,6 +39,21 @@ class Oposicion:
         """Devuelve el titulo de la Oposición"""
         return self.__titulo
 
+    @property
+    def grupo(self):
+        """Devuelve el grupo de la Oposición"""
+        return self.__grupo
+
+    @property
+    def temas(self):
+        """Devuelve los temas de la Oposición"""
+        return self.__temas
+
+    @property
+    def fecha(self):
+        """Devuelve la fecha de la Oposición"""
+        return self.__fecha
+
     def add_tema(self, tema):
         """Añade un tema al temario de la Oposición"""
         pass
