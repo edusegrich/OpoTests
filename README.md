@@ -43,7 +43,7 @@ En este punto el proyecto ya está listo para su uso.
 ## Guía de uso
 Si quieres comprobar la sintaxis de los ficheros fuente, ejecuta el siguiente comando:
 ```
-invoke lint
+invoke check
 ```
   
 Si quieres lanzar los tests, ejecuta el siguiente comando:
