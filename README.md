@@ -68,3 +68,9 @@ Se puede consultar la justificación de la elección del [gestor de dependencias
 
 ### Gestor de tareas
 Se puede consultar la justificación de la elección del [gestor de tareas](https://github.com/edusegrich/OpoTests/blob/Objetivo-3/docs/justificacion_gestor_tareas.md) del proyecto.
+
+### Test runner
+Se puede consultar la justificación de la elección del [test runner](https://github.com/edusegrich/OpoTests/blob/Objetivo-4/docs/justificacion_eleccion_framework_test.md#elecci%C3%B3n-del-test-runner-runner) para las tareas de testeo.
+
+### Biblioteca de aserciones
+Se puede consultar la justificación de la elección de la [biblioteca de aserciones](https://github.com/edusegrich/OpoTests/blob/Objetivo-4/docs/justificacion_eleccion_framework_test.md#elecci%C3%B3n-de-la-biblioteca-de-aserciones-no_entry_sign) para las tareas de testeo.
