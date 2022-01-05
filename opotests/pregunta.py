@@ -10,7 +10,7 @@ class Pregunta:
     ----------
     id : int
         identificador de la pregunta
-    tema : int
+    tema : str
         tema al que pertenece la pregunta
     enunciado : str
         enunciado de la pregunta
