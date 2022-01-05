@@ -1,7 +1,7 @@
 from opotests.dificultad import Dificultad
 from opotests.grupo import Grupo
 from opotests.tema import Tema
-from datetime import date
+from datetime import date, datetime
 
 def importar_pregunta(ruta):
     """
@@ -49,7 +49,7 @@ def importar_oposicion(ruta):
             salida[2].append(Tema(titulo_tema))
 
         # Pasamos la fecha a un objeto de tipo Date
-        salida[3] = date(salida[3])
+        salida[3] = datetime.strptime(salida[3], "%Y-%m-%d")
     
     return salida
 
