@@ -1,19 +1,10 @@
 import pytest
-from assertpy import assert_that, add_extension
+from assertpy import assert_that
 
-from importar import *
+from conftest import *
 from opotests.pregunta import Pregunta
 from opotests.dificultad import Dificultad
 
-@pytest.fixture
-def datos_pregunta():
-    datos = importar_pregunta('test/preguntas.txt')
-    return datos
-
-@pytest.fixture
-def pregunta():
-    datos_pregunta = importar_pregunta('test/preguntas.txt')
-    return Pregunta(datos_pregunta[0], datos_pregunta[1], datos_pregunta[2], datos_pregunta[3], datos_pregunta[4], datos_pregunta[5])
 
 def test_estado_pregunta():
     """
@@ -59,20 +50,4 @@ def test_dificultad(pregunta):
     Test para comprobar que la dificultad de una pregunta es una de las posibles
     """
     assert_that(pregunta.dificultad).is_in(Dificultad.Alto, Dificultad.Medio, Dificultad.Bajo)
-
-def esta_entre_las_claves(self, diccionario):
-    """
-    Extension de assertpy para verificar si un valor esta entre las claves de un diccionario
-    """
-    esta = False
-    for key in diccionario.keys():
-        if self.val == key:
-            esta = True
-            break
-    if esta == False:
-        self.error(f'{self.val} no esta')
-
-    return self
-
-# Añadimos la extension
-add_extension(esta_entre_las_claves)
+    
