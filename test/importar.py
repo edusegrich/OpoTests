@@ -43,7 +43,7 @@ def importar_oposicion(ruta):
         salida[1] = grupo(salida[1])
 
         # Obtenemos los titulos de los temas y construimos una lista de objetos de tipo Tema
-        lista_temas = list(salida[2])
+        lista_temas = eval(salida[2])
         salida[2] = []
         for titulo_tema in lista_temas:
             salida[2].append(Tema(titulo_tema))
