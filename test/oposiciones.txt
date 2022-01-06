@@ -1,1 +1,1 @@
-Cuerpo Nacional de Policia (Escala Ejecutiva)|A1|[Derechos Humanos,Constitución Española]|2022-02-25
+Cuerpo Nacional de Policia (Escala Ejecutiva)|A1|['Derechos Humanos','Constitución Española']|2022-02-25
