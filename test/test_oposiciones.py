@@ -65,3 +65,4 @@ def test_pregunta_tema_oposicion():
 
 
     assert_that(pregunta.tema).is_in(oposicion.temas)
+    
