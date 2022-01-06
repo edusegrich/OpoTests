@@ -62,7 +62,22 @@ def test_pregunta_tema_oposicion():
 
     datos_oposicion= importar_oposicion('test/oposiciones.txt')
     oposicion = Oposicion(datos_oposicion[0], datos_oposicion[1], datos_oposicion[2], datos_oposicion[3])
-
-
-    assert_that(pregunta.tema).is_in(oposicion.temas)
     
+    assert_that(pregunta.tema).esta_entre_los_temas(oposicion.temas)
+
+def esta_entre_los_temas(self, lista):
+    """
+    Extension de assertpy para verificar si un tema (titulo) esta entre los temas de una lista
+    """
+    esta = False
+    for tema in lista:
+        if self.val == tema.titulo:
+            esta = True
+            break
+    if esta == False:
+        self.error(f'{self.val} no esta')
+
+    return self
+
+# Añadimos la extension
+add_extension(esta_entre_los_temas)
