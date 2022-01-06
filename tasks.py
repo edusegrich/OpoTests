@@ -16,7 +16,7 @@ def installdeps(c):
     run("poetry install")
 
 @task
-def lint(c):
+def check(c):
     """
     Tarea para comprobar la sintaxis de los ficheros fuente.
     """
