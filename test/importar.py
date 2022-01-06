@@ -87,3 +87,4 @@ def grupo(str):
                'C2': Grupo.C2, 
                'E': Grupo.E}
     return grupos[str]
+    
