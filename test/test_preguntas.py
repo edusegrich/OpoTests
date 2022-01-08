@@ -10,8 +10,6 @@ def test_estado_pregunta():
     """
     Test para comprobar que la pregunta tiene los atributos correctos
     """
-    # Comprobamos que la pregunta no esta vacia
-    # assert_that(pregunta).is_not_empty()
     datos = importar_pregunta('test/preguntas.txt')
     pregunta = Pregunta(datos[0], datos[1], datos[2], datos[3], datos[4], datos[5])
 
