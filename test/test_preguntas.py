@@ -50,4 +50,3 @@ def test_dificultad(pregunta):
     Test para comprobar que la dificultad de una pregunta es una de las posibles
     """
     assert_that(pregunta.dificultad).is_in(Dificultad.Alto, Dificultad.Medio, Dificultad.Bajo)
-    

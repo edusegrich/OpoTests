@@ -7,16 +7,6 @@ from opotests.tema import Tema
 from opotests.oposicion import Oposicion
 from opotests.pregunta import Pregunta
 
-# @pytest.fixture
-# def pregunta():
-#     datos_pregunta = importar_pregunta('test/preguntas.txt')
-#     return Pregunta(datos_pregunta[0], datos_pregunta[1], datos_pregunta[2], datos_pregunta[3], datos_pregunta[4], datos_pregunta[5])
-
-# @pytest.fixture
-# def oposicion():
-#     datos_oposicion= importar_oposicion('test/oposiciones.txt')
-#     return Oposicion(datos_oposicion[0], datos_oposicion[1], datos_oposicion[2], datos_oposicion[3])
-
 def test_estado_oposicion():
     """
     Test para comprobar que la oposicion tiene los atributos correctos
@@ -64,4 +54,3 @@ def test_pregunta_tema_oposicion():
     oposicion = Oposicion(datos_oposicion[0], datos_oposicion[1], datos_oposicion[2], datos_oposicion[3])
     
     assert_that(pregunta.tema).esta_entre_los_temas(oposicion.temas)
-    
