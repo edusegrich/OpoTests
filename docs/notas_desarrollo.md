@@ -15,4 +15,4 @@ Los tests diseñados no dependen de ningún tipo de sistema ni hardware concreto
 Gracias a la elección del [*test runner*](justificacion_eleccion_framework_test.md), los resultados de los tests se evalúan y se muestran automáticamente, sin necesidad de tener que utilizar ficheros de resultados ni visualizar comprobaciones de error tras la ejecución de estos.
 
 ### :alarm_clock: Timely (Oportuno)
-El desarrollo del proyecto se sitúa en el [milestone 1](../milestone/2). Los tests relativos al PMV de dicho milestone se encuentran implementados en [test](../test/).
+El desarrollo del proyecto se sitúa en el [milestone 1](https://github.com/edusegrich/OpoTests/milestone/2). Los tests relativos al PMV de dicho milestone se encuentran implementados en [test](../test/).
