@@ -3,7 +3,7 @@
 ## Desarrollo de tests en base a los principios F.I.R.S.T.
 
 ### :rocket: Fast (Rápido)
-En el testeo realizado en el proyecto, se lleva a cabo un alto número de comprobaciones del código desarrollado en un tiempo razonable.
+En el testeo realizado en el proyecto se lleva a cabo un alto número de comprobaciones del código desarrollado en un tiempo razonable. En concreto, en este momento las comprobaciones se realizan ejecutando un total de **ocho** tests que tardan una media de ```0.708 segundos``` en llevarse a cabo.
 
 ### :point_up: Independent (Independiente)
 Las comprobaciones realizadas en cada test no dependen del orden en el que estas se estén realizando, por lo que se cumple el principio de independencia.
