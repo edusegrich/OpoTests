@@ -15,7 +15,6 @@ def test_estado_pregunta():
 
     # Comprobamos que la pregunta tiene un id
     assert_that(pregunta.id).is_instance_of(int)
-    assert_that(pregunta.id).is_not_none()
 
     # Comprobamos que la pregunta tiene un tema asignado
     assert_that(pregunta.tema).is_instance_of(str)
