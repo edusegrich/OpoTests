@@ -5,7 +5,7 @@ Existen numerosas alternativas para la realización de testeo de código en proy
 - **nose2** está basado en *Unittest* y es, fundamentalmente, este con plugins añadidos que hacen la tarea de testeo más sencilla. En la [documentación oficial](https://docs.nose2.io/en/latest/#nose2-vs-pytest) recomienda el uso de *pytest* en lugar de su framework si eres un usuario principiante en el testeo de código en Python.
 - **Pytest** es un framework de tests de propósito general pero especializado en testeo de APIs. Utiliza una sintaxis simple que contribuye a ejecuciones de tests eficientes. Cuenta con numerosos plugins y tiene soporte para la ejecución de tests en paralelo.
 
-En un principio, he decidido descartar **nose2** ya que en la [documentación oficial](https://docs.nose2.io/en/latest/#nose2-vs-pytest) recomienda el uso de otros test runners (**Pytest** en concreto) para usuarios que están adentrándose en el mundo del desarrollo basado en tests.
+En un principio, he decidido descartar **nose2** ya que en la [documentación oficial](https://docs.nose2.io/en/latest/#nose2-vs-pytest) recomienda el uso de otras alternativas (**Pytest** en concreto) para usuarios que están adentrándose en el mundo del desarrollo basado en tests.
 
 La decisión era entre **Unittest** y **Pytest**. Ambas son buenas opciones, pero he considerado que el uso de **Pytest** es relativamente más sencillo que el de **Unittest** por el hecho de de no ser necesario crear una clase para los tests ni añadir el bloque final en el que se ejecuta ```unittest.main()```. 
 
