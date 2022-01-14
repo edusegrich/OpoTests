@@ -40,7 +40,7 @@ def test_respuesta_correcta(pregunta):
     """
     Test para comprobar que la pregunta tiene una respuesta correcta asignada entre las posibles
     """
-    assert_that(pregunta.resp_correcta).esta_entre_las_claves(pregunta.respuestas)
+    assert_that(pregunta.respuestas).contains_key(pregunta.resp_correcta)
 
 def test_dificultad(pregunta):
     """

@@ -118,20 +118,3 @@ def esta_entre_los_temas(self, lista):
 
 # Añadimos la extension
 add_extension(esta_entre_los_temas)
-
-def esta_entre_las_claves(self, diccionario):
-    """
-    Extension de assertpy para verificar si un valor esta entre las claves de un diccionario
-    """
-    esta = False
-    for key in diccionario.keys():
-        if self.val == key:
-            esta = True
-            break
-    if esta == False:
-        self.error(f'{self.val} no esta')
-
-    return self
-
-# Añadimos la extension
-add_extension(esta_entre_las_claves)
