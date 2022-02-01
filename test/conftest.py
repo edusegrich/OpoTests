@@ -19,20 +19,3 @@ def examen():
     preguntas = importar_preguntas('test/preguntas.txt')
     examen = Examen(1, oposicion, preguntas)
     return examen
-
-def esta_entre_los_temas(self, lista):
-    """
-    Extension de assertpy para verificar si un tema (titulo) esta entre los temas de una lista
-    """
-    esta = False
-    for tema in lista:
-        if self.val == tema.titulo:
-            esta = True
-            break
-    if esta == False:
-        self.error(f'{self.val} no esta')
-
-    return self
-
-# Añadimos la extension
-add_extension(esta_entre_los_temas)
