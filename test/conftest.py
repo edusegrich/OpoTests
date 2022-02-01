@@ -1,7 +1,6 @@
 import pytest
 from opotests.examen import Examen
 from opotests_utils import importar_oposicion, importar_pregunta, importar_preguntas
-from assertpy import add_extension
     
 @pytest.fixture
 def pregunta():
