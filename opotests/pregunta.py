@@ -73,3 +73,6 @@ class Pregunta:
     def add_respuesta(self, respuesta):
         """Añade una opción de respuesta a la Pregunta"""
         pass
+
+    def __eq__(self, otro) -> bool:
+        return self.__id == otro.id
