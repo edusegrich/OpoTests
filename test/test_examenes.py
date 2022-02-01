@@ -37,7 +37,7 @@ def test_examen_completo(examen):
     """
     Test para comprobar que el examen es completo (hay preguntas de todos los temas de la oposicion que le corresponde)
     """
-    temas = examen.oposicion.temas
+    temas = examen.oposicion.temas.copy()
 
     for pregunta in examen.preguntas:
         if pregunta.tema in temas:
