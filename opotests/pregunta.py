@@ -1,4 +1,5 @@
 from opotests.dificultad import Dificultad
+from opotests.tema import Tema
 
 class Pregunta:
     """
@@ -10,7 +11,7 @@ class Pregunta:
     ----------
     id : int
         identificador de la pregunta
-    tema : str
+    tema : Tema
         tema al que pertenece la pregunta
     enunciado : str
         enunciado de la pregunta
@@ -24,7 +25,12 @@ class Pregunta:
 
     def __init__(self, id, tema, enunciado, respuestas, resp_correcta, dificultad):
         self.__id = id
-        self.__tema = tema
+
+        if type(tema) is Tema:
+            self.__tema = tema
+        else:
+            raise TypeError("El atributo 'tema' deber ser de tipo Tema")
+
         self.__enunciado = enunciado
         self.__respuestas = respuestas
         self.__resp_correcta = resp_correcta
@@ -43,6 +49,11 @@ class Pregunta:
     def tema(self):
         """Devuelve el tema de la Pregunta"""
         return self.__tema
+
+    @property
+    def enunciado(self):
+        """Devuelve el enunciado de la Pregunta"""
+        return self.__enunciado
 
     @property
     def respuestas(self):
