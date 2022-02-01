@@ -4,15 +4,16 @@ from datetime import date
 
 from conftest import *
 from opotests.tema import Tema
-from opotests.oposicion import Oposicion
-from opotests.pregunta import Pregunta
+from opotests.grupo import Grupo
 
 def test_estado_oposicion():
     """
     Test para comprobar que la oposicion tiene los atributos correctos
     """
-    datos = importar_oposicion('test/oposiciones.txt')
-    oposicion = Oposicion(datos[0], datos[1], datos[2], datos[3])
+    # datos = importar_oposicion('test/oposiciones.txt')
+    # oposicion = Oposicion(datos[0], datos[1], datos[2], datos[3])
+
+    oposicion = importar_oposicion('test/oposiciones.txt')
 
     # Comprobamos que la oposicion tiene un titulo
     assert_that(oposicion.titulo).is_instance_of(str)
@@ -47,10 +48,7 @@ def test_pregunta_tema_oposicion():
     """
     Test para comprobar la relacion entre Pregunta, Tema y Oposicion
     """
-    datos_pregunta = importar_pregunta('test/preguntas.txt')
-    pregunta = Pregunta(datos_pregunta[0], datos_pregunta[1], datos_pregunta[2], datos_pregunta[3], datos_pregunta[4], datos_pregunta[5])
-
-    datos_oposicion= importar_oposicion('test/oposiciones.txt')
-    oposicion = Oposicion(datos_oposicion[0], datos_oposicion[1], datos_oposicion[2], datos_oposicion[3])
+    pregunta = importar_pregunta('test/preguntas.txt')
+    oposicion = importar_oposicion('test/oposiciones.txt')
     
-    assert_that(pregunta.tema).esta_entre_los_temas(oposicion.temas)
+    assert_that(oposicion.temas).contains(pregunta.tema)
