@@ -1,1 +1,6 @@
 1|Constitución Española|¿En qué año se redactó la Constitución Española?|{1: '1975', 2: '1978', 3: '1974', 4: '1980'}|2|Bajo
+2|Constitución Española|La lengua oficial del Estado español es:|{1: 'El español', 2: 'El castellano', 3: 'El catalán', 4: 'El gallego'}|2|Bajo
+3|Constitución Española|España se constituye en un Estado:|{1: 'Social de Derecho', 2: 'Democrático de Derecho', 3: 'Social y democrático de Derecho', 4: 'Plural y democrático de Derecho'}|3|Bajo
+4|Derechos Humanos|La Declaración Universal de los DDHH se redactó a raíz de...|{1: 'Primera Guerra Mundial', 2: 'Segunda Guerra Mundial', 3: 'Guerra Civil Española', 4: 'Revolución Francesa'}|2|Bajo
+5|Derechos Humanos|La proclamación de la Declaración Universal de los DDHH tuvo lugar en:|{1: '1947', 2: '1948', 3: '1945', 4: '1946'}|2|Bajo
+6|Derechos Humanos|La proclamación de la Declaración Universal de los DDHH efectúa una proclamación general de los derechos:|{1: 'Civiles, políticos, económicos, sociales y culturales', 2: 'Civiles y sociales', 3: 'Políticos y económicos', 4: 'Civiles y culturales'}|1|Bajo
