@@ -15,11 +15,13 @@ class Oposicion:
         grupo de la oposición
     temas : list
         lista que contiene los temas que componen la oposición
+    numero_preguntas : int
+        numero de preguntas con las que se evalua en los examenes de la oposicion
     fecha : datetime
         fecha en la que tendrá lugar el examen de la oposición
     """
 
-    def __init__(self, titulo, grupo, temas, fecha):
+    def __init__(self, titulo, grupo, temas, numero_preguntas, fecha):
         self.__titulo = titulo
 
         if type(grupo) is Grupo:
@@ -28,6 +30,8 @@ class Oposicion:
             raise TypeError ("El atributo 'grupo' debe ser del tipo Grupo")
         
         self.__temas = temas
+
+        self.__numero_preguntas = numero_preguntas
 
         if type(fecha) is datetime:
             self.__fecha = fecha
@@ -48,6 +52,11 @@ class Oposicion:
     def temas(self):
         """Devuelve los temas de la Oposición"""
         return self.__temas
+
+    @property
+    def numero_preguntas(self):
+        """Devuelve el numero de preguntas con las que se evalua en la Oposición"""
+        return self.__numero_preguntas
 
     @property
     def fecha(self):
