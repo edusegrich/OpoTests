@@ -10,9 +10,6 @@ def test_estado_oposicion():
     """
     Test para comprobar que la oposicion tiene los atributos correctos
     """
-    # datos = importar_oposicion('test/oposiciones.txt')
-    # oposicion = Oposicion(datos[0], datos[1], datos[2], datos[3])
-
     oposicion = importar_oposicion('test/oposiciones.txt')
 
     # Comprobamos que la oposicion tiene un titulo
