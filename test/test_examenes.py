@@ -6,14 +6,10 @@ from conftest import *
 from opotests.pregunta import Pregunta
 from opotests.oposicion import Oposicion
 
-def test_estado_examen():
+def test_estado_examen(examen):
     """
     Test para comprobar que el examen tiene los atributos correctos
     """
-    oposicion = importar_oposicion('test/oposiciones.txt')
-    preguntas = importar_preguntas('test/preguntas.txt')
-    examen = Examen(1, oposicion, preguntas)
-
     # Comprobamos que el examen tiene un id
     assert_that(examen.id).is_instance_of(int)
 

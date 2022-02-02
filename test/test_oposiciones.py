@@ -6,12 +6,10 @@ from conftest import *
 from opotests.tema import Tema
 from opotests.grupo import Grupo
 
-def test_estado_oposicion():
+def test_estado_oposicion(oposicion):
     """
     Test para comprobar que la oposicion tiene los atributos correctos
     """
-    oposicion = importar_oposicion('test/oposiciones.txt')
-
     # Comprobamos que la oposicion tiene un titulo
     assert_that(oposicion.titulo).is_instance_of(str)
     assert_that(oposicion.titulo).is_not_empty()

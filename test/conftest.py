@@ -13,8 +13,7 @@ def oposicion():
     return oposicion
 
 @pytest.fixture
-def examen():
-    oposicion = importar_oposicion('test/oposiciones.txt')
+def examen(oposicion):
     preguntas = importar_preguntas('test/preguntas.txt')
     examen = Examen(1, oposicion, preguntas)
     return examen

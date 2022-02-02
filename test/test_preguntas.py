@@ -6,15 +6,10 @@ from opotests.tema import Tema
 from opotests.dificultad import Dificultad
 
 
-def test_estado_pregunta():
+def test_estado_pregunta(pregunta):
     """
     Test para comprobar que la pregunta tiene los atributos correctos
     """
-    # datos = importar_pregunta('test/preguntas.txt')
-    # pregunta = Pregunta(datos[0], datos[1], datos[2], datos[3], datos[4], datos[5])
-
-    pregunta = importar_pregunta('test/preguntas.txt')
-
     # Comprobamos que la pregunta tiene un id
     assert_that(pregunta.id).is_instance_of(int)
 
