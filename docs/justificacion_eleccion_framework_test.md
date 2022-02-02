@@ -40,7 +40,7 @@ En un principio, he decidido descartar **nose2** ya que en la [documentación of
 
 La decisión era entre **Unittest** y **Pytest**. Ambas son buenas opciones, pero he considerado que el uso de **Pytest** es relativamente más sencillo que el de **Unittest** por el hecho de de no ser necesario crear una clase para los tests ni añadir el bloque final en el que se ejecuta ```unittest.main()```.
 
-Además, la salida de los resultados (tanto de éxito como de errores) es bastante más clara y organizada en Pytest. 
+Además, la salida de los resultados (tanto de éxito como de errores) es bastante más clara y organizada en **Pytest**. 
 
 El uso de *fixtures* también considero que es más sencillo en **Pytest**, pues para este basta con usar un decorador dedicado (```@pytest.fixture```). En cambio, en **Unittest** es necesario definir una función de ```SetUp``` para su construcción y una de ```TearDown``` para su destrucción.
 
@@ -59,7 +59,7 @@ En primera instancia, he decidido descartar la opción de **Grappa** debido a qu
 
 En este punto nos quedan tres opciones: **funciones de Unittest** **Aserción nativa de Python** y **Assertpy**.
 
-La primera opción, [funciones de Unittest](https://docs.python.org/es/3.9/library/unittest.html#classes-and-functions), me parece que cuenta con pocas funciones para la aserción. Es cierto que tiene funciones como ```assertEqual(a, b)```, ```assertTrue(x)``` o ```assertIsNone(x)``` que pueden ser útiles pero no tiene una función, por ejemplo, para comprobar si un diccionario tiene cierta clave, cosa que nos podría hacer falta para comprobar si una pregunta tiene una respuesta correcta de entre las respuestas posibles y que tiene sí tiene **Assertpy**. Es por ello que quizá esta opción se puede quedar corta y complicarnos la tarea de testeo.
+La primera opción, [funciones de Unittest](https://docs.python.org/es/3.9/library/unittest.html#classes-and-functions), me parece que cuenta con pocas funciones para la aserción. Es cierto que tiene funciones como ```assertEqual(a, b)```, ```assertTrue(x)``` o ```assertIsNone(x)``` que pueden ser útiles pero no tiene una función, por ejemplo, para comprobar si un diccionario tiene cierta clave, cosa que nos podría hacer falta para comprobar si una pregunta tiene una respuesta correcta de entre las respuestas posibles y que sí tiene **Assertpy**. Es por ello que quizá esta opción se puede quedar corta y complicarnos la tarea de testeo.
 
 La segunda opción nos puede "librar" de tener que importar una biblioteca de aserciones y hacer uso de los recursos con los que cuenta Python, algo que nos puede bastar perfectamente para lo que necesitamos. 
 
