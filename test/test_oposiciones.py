@@ -39,11 +39,8 @@ def test_temas(oposicion):
     for tema in oposicion.temas:
         assert_that(tema).is_instance_of(Tema)
 
-def test_pregunta_tema_oposicion():
+def test_pregunta_tema_oposicion(pregunta, oposicion):
     """
     Test para comprobar la relacion entre Pregunta, Tema y Oposicion
     """
-    pregunta = importar_pregunta('test/preguntas.txt')
-    oposicion = importar_oposicion('test/oposiciones.txt')
-    
     assert_that(oposicion.temas).contains(pregunta.tema)
