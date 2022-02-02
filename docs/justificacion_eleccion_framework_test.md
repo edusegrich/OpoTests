@@ -13,25 +13,25 @@ Los requisitos que se esperan del marco de pruebas con el que realizar la tarea 
 Existen numerosas alternativas para la realización de testeo de código en proyectos de Python. Algunas de ellas son:
 
 ### **Unittest**
-1. Cuenta con una [documentación oficial](https://docs.python.org/3.10/library/unittest.html) actualizada con cada versión y, actualmente, tiene en desarrollo la versión 3.11, en cuyo [repositorio de GitHub](https://github.com/python/cpython/tree/main/Lib/unittest) hay commits registrados recientemente. :white_check_mark:
-2. Su uso es sencillo: los tests se definen en funciones que se agrupan en clases. :white_check_mark:
+1. Cuenta con una [documentación oficial](https://docs.python.org/3.10/library/unittest.html) actualizada con cada versión y, actualmente, tiene en desarrollo la versión 3.11, en cuyo [repositorio de GitHub](https://github.com/python/cpython/tree/main/Lib/unittest) hay commits registrados recientemente. ✔️
+2. Su uso es sencillo: los tests se definen en funciones que se agrupan en clases. ✔️
 3. La información de salida no aporta mucho más que "número de tests pasados" y cuando hay errores, la información se muestra bastante abultada y poco organizada. :x:
-4. Permite el uso de *fixtures*. :white_check_mark:
-5. Permite el uso de bibliotecas de aserciones externas. :white_check_mark:
+4. Permite el uso de *fixtures*. ✔️
+5. Permite el uso de bibliotecas de aserciones externas. ✔️
 
 ### **nose2**
-1. Tiene [documentación oficial](https://docs.nose2.io/en/latest/) disponible con la última versión y también tiene un [repositorio de GitHub](https://github.com/nose-devs/nose2) en activo. :white_check_mark:
-2. Su uso es como el de Unittest. :white_check_mark:
+1. Tiene [documentación oficial](https://docs.nose2.io/en/latest/) disponible con la última versión y también tiene un [repositorio de GitHub](https://github.com/nose-devs/nose2) en activo. ✔️
+2. Su uso es como el de Unittest. ✔️
 3. La salida es similar a la de Unittest. :x:
-4. Permite el uso de *fixtures*. :white_check_mark:
-5. Permite el uso de bibliotecas de aserciones externas. :white_check_mark:
+4. Permite el uso de *fixtures*. ✔️
+5. Permite el uso de bibliotecas de aserciones externas. ✔️
 
 ### **Pytest**
-1. Cuenta con una buena [documentación oficial](https://docs.pytest.org/en/6.2.x/) y [repo de GitHub](https://github.com/pytest-dev/pytest) activo. :white_check_mark:
-2. Su uso es bastante sencillo: los test se definen en funciones dentro de ficheros cuyo nombre empiece por 'test'. Es bastante intuitivo y fácil de aprender y familiarizarse con su funcionamiento. :white_check_mark:
-3. La salida es muy descriptiva: se aporta información sobre el porcentaje de tests que se han pasado y cuando hay errores se marcan de color rojo en la terminal, indicando claramente en qué partes del código el test no ha pasado, ayudando así a identificar rápidamente los errores. :white_check_mark:
-4. Permite el uso de *fixtures*. :white_check_mark:
-5. Permite el uso de bibliotecas de aserciones externas. :white_check_mark:
+1. Cuenta con una buena [documentación oficial](https://docs.pytest.org/en/6.2.x/) y [repo de GitHub](https://github.com/pytest-dev/pytest) activo. ✔️
+2. Su uso es bastante sencillo: los test se definen en funciones dentro de ficheros cuyo nombre empiece por 'test'. Es bastante intuitivo y fácil de aprender y familiarizarse con su funcionamiento. ✔️
+3. La salida es muy descriptiva: se aporta información sobre el porcentaje de tests que se han pasado y cuando hay errores se marcan de color rojo en la terminal, indicando claramente en qué partes del código el test no ha pasado, ayudando así a identificar rápidamente los errores. ✔️
+4. Permite el uso de *fixtures*. ✔️
+5. Permite el uso de bibliotecas de aserciones externas. ✔️
 
 ## Elección
 Observando los criterios en base a cada una de las opciones, el ganador es **Pytest**.
