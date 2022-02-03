@@ -57,7 +57,7 @@ Respecto a la biblioteca de aserciones, para Python existe una gran oferta de po
 ## Elección
 En primera instancia, he decidido descartar la opción de **Grappa** debido a que no me acaban de convencer los estilos de aserción ```expect``` y ```should```, y la manera en que se atienden las condiciones con ellos. 
 
-En este punto nos quedan tres opciones: **funciones de Unittest** **Aserción nativa de Python** y **Assertpy**.
+En este punto nos quedan tres opciones: **funciones de Unittest**, **Aserción nativa de Python** y **Assertpy**.
 
 La primera opción, [funciones de Unittest](https://docs.python.org/es/3.9/library/unittest.html#classes-and-functions), me parece que cuenta con pocas funciones para la aserción. Es cierto que tiene funciones como ```assertEqual(a, b)```, ```assertTrue(x)``` o ```assertIsNone(x)``` que pueden ser útiles pero no tiene una función, por ejemplo, para comprobar si un diccionario tiene cierta clave, cosa que nos podría hacer falta para comprobar si una pregunta tiene una respuesta correcta de entre las respuestas posibles y que sí tiene **Assertpy**. Es por ello que quizá esta opción se puede quedar corta y complicarnos la tarea de testeo.
 
