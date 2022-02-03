@@ -29,3 +29,4 @@ def test(c):
     Tarea para comprobar el funcionamiento.
     """
     print("Ejecutando test a los ficheros fuente...")
+    run("pytest")
