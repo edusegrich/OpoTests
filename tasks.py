@@ -30,3 +30,10 @@ def test(c):
     """
     print("Ejecutando test a los ficheros fuente...")
     run("pytest")
+
+@task
+def docker_run(c):
+    """
+    Tarea para ejecutar la imagen del contenedor
+    """
+    run("docker run -t -v `pwd`:/app/test edusegrich/OpoTests")
