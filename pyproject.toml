@@ -13,7 +13,6 @@ pylint = "^2.12.1"
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
 assertpy = "^1.1"
-iteration-utilities = "^0.11.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
