@@ -76,3 +76,6 @@ class Pregunta:
 
     def __eq__(self, otro) -> bool:
         return self.__id == otro.id
+
+    def __hash__(self) -> int:
+        return hash(self.__id)

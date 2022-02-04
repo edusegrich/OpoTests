@@ -1,6 +1,5 @@
 import pytest
 from assertpy import assert_that
-from iteration_utilities import duplicates
 
 from conftest import *
 from opotests.pregunta import Pregunta
@@ -45,7 +44,7 @@ def test_preguntas_no_repetidas(examen):
     """
     Test para comprobar que no hay preguntas repetidas en el examen generado
     """
-    assert_that(list(duplicates(examen.preguntas))).is_empty()
+    assert_that(examen.preguntas).does_not_contain_duplicates()
         
 def test_preguntas(examen):
     """
