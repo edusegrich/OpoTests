@@ -21,4 +21,4 @@ Los tests diseñados no dependen de ningún tipo de sistema ni hardware concreto
 Gracias a la elección del [*marco de pruebas*](justificacion_eleccion_framework_test.md), los resultados de los tests se evalúan y se muestran automáticamente, sin necesidad de tener que utilizar ficheros de resultados ni visualizar comprobaciones de error tras la ejecución de estos.
 
 ### :alarm_clock: Timely (Oportuno)
-El desarrollo del proyecto se sitúa en el [milestone 2.5](https://github.com/edusegrich/OpoTests/milestone/6). Los tests relativos al PMV de dicho milestone se encuentran implementados en [test](../test/). Estos tests se basan en garantizar la lógica de negocio básica del proyecto: *generar exámenes tipo tests de oposiciones* ([HU1](https://github.com/edusegrich/OpoTests/issues/3))
+El desarrollo del proyecto se sitúa en el [milestone 2.5](https://github.com/edusegrich/OpoTests/milestone/6). Los tests relativos al PMV de dicho milestone se encuentran implementados en [test](../test/). Estos tests se basan en garantizar la lógica de negocio básica del proyecto: *generar exámenes tipo test de oposiciones* ([HU1](https://github.com/edusegrich/OpoTests/issues/3))
