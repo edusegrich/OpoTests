@@ -48,7 +48,7 @@ Tras haber realizado una búsqueda de las distintas posibilidades que ofrece Doc
 Imágenes base como `RHEL 8 (latest)` o `python:3.8.12-bullseye` no cumplen con el primero de los requisitos (**Imagen pequeña**), por lo que han sido descartadas de antemano.
 
 En todos los contenedores se ha instalado:
-- **curl**: para la descarga de [*Poetry*](https://python-poetry.org/docs/#installation) por medio del método recomendado.
+- **curl**: para la descarga de [*Poetry*](https://python-poetry.org/docs/#installation) por medio del método recomendado. Es posible también instalarlo con *pip* pero el proceso implica la instalación de otras dependencias que realmente no necesitamos y ello supondría una contradicción con respecto a los requisitos establecidos.
 - **invoke**: para la gestión de tareas.
 - **poetry**: para la gestión de dependencias.
 
