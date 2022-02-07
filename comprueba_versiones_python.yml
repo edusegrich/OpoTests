@@ -36,7 +36,6 @@ steps:
     python -m pip install --upgrade pip
     pip install invoke
     invoke installpoetry
-    invoke install
     poetry config virtualenvs.create false
     invoke installdeps
   displayName: 'Install dependencies'
