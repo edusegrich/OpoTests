@@ -6,8 +6,8 @@ on:
       - Dockerfile
       - pyproject.toml
       - tasks.py
-      - test/
-      - opotests/
+      - 'test/**'
+      - 'opotests/**'
 
 jobs:
   actualizar_contenedor:
