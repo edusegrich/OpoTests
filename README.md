@@ -50,6 +50,15 @@ Si quieres lanzar los tests, ejecuta el siguiente comando:
 ```
 invoke test
 ```
+Si quieres lanzar los tests dentro del contenedor de pruebas de `Docker` diseñado, tienes dos comandos:
+1. Construcción del contenedor:
+  ```
+  invoke docker-build
+  ```
+2. Ejecución del contenedor:
+  ```
+  invoke docker-run
+  ```
 
 ## Documentación 📋 📂
 En el subdirectorio *docs* se puede consultar la [documentación](/docs) acerca del proyecto.
