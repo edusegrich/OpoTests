@@ -69,11 +69,8 @@ Se puede consultar la justificación de la elección del [gestor de dependencias
 ### Gestor de tareas
 Se puede consultar la justificación de la elección del [gestor de tareas](docs/justificacion_gestor_tareas.md) del proyecto.
 
-### Test runner 🏃
-Se puede consultar la justificación de la elección del [test runner](docs/justificacion_eleccion_framework_test.md) para las tareas de testeo.
-
-### Biblioteca de aserciones 📚🚫
-Se puede consultar la justificación de la elección de la [biblioteca de aserciones](docs/justificacion_eleccion_framework_test.md) para las tareas de testeo.
+### Framework Test 🏃
+Se puede consultar la justificación de la elección del [framework test](docs/justificacion_eleccion_framework_test.md) para las tareas de testeo.
 
 ### Notas de desarrollo 📔
 Se pueden consultar [notas de desarrollo](docs/notas_desarrollo.md) del proyecto.
