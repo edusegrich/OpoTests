@@ -18,5 +18,4 @@ jobs:
       - name: Construccion y subida de contenedor
         uses: docker/build-push-action@v2
         with:
-          repository: edusegrich/opotests
-          tags: latest
+          tags: edusegrich/opotests:latest
