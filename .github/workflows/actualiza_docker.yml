@@ -1,6 +1,13 @@
 name: Actualizar contenedor en DockerHub
 
-on: [push]
+on:
+  push:
+    paths:
+      - Dockerfile
+      - pyproject.toml
+      - tasks.py
+      - test/
+      - opotests/
 
 jobs:
   actualizar_contenedor:
