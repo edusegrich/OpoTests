@@ -16,7 +16,7 @@ def installdeps(c):
     run("poetry install")
 
 @task
-def lint(c):
+def check(c):
     """
     Tarea para comprobar la sintaxis de los ficheros fuente.
     """
@@ -29,3 +29,4 @@ def test(c):
     Tarea para comprobar el funcionamiento.
     """
     print("Ejecutando test a los ficheros fuente...")
+    run("pytest")

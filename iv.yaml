@@ -6,3 +6,4 @@ entidad:
 automatizar:
     fichero: tasks.py
     orden: invoke
+test: test/test_preguntas.py
