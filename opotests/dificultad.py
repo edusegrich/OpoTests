@@ -1,8 +1,8 @@
-from enum import Enum, auto, unique
+from enum import Enum, unique
 
 @unique
 class Dificultad(Enum):
     """Clase para poder representar el atributo dificultad de la clase Pregunta"""
-    Alto = auto()
-    Medio = auto()
-    Bajo = auto()
+    Alto = 'Alto'
+    Medio = 'Medio'
+    Bajo = 'Bajo'
