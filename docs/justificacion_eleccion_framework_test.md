@@ -40,10 +40,11 @@ En un principio, he decidido descartar **nose2** ya que en la [documentación of
 
 La decisión era entre **Unittest** y **Pytest**. Ambas son buenas opciones, pero he considerado que el uso de **Pytest** es relativamente más sencillo que el de **Unittest** por el hecho de de no ser necesario crear una clase para los tests ni añadir el bloque final en el que se ejecuta ```unittest.main()```.
 
-Además, la salida de los resultados (tanto de éxito como de errores) es bastante más clara y organizada en **Pytest**. 
+Además, la salida de los resultados (tanto de éxito como de errores) es bastante más clara y organizada con el *test runner* de **Pytest**. 
 
 El uso de *fixtures* también considero que es más sencillo en **Pytest**, pues para este basta con usar un decorador dedicado (```@pytest.fixture```). En cambio, en **Unittest** es necesario definir una función de ```SetUp``` para su construcción y una de ```TearDown``` para su destrucción.
 
+Por tanto, se ha optado por utilizar tanto el *marco de pruebas* como el *test runner* de **Pytest**.
 
 # Biblioteca de Aserciones :no_entry_sign:
 ## Opciones
