@@ -20,4 +20,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: latest
+          tags: edusegrich/opotests:latest
