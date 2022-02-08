@@ -9,8 +9,11 @@ blocks:
     task:
       jobs:
         - name: Testeo
+      		matrix:
+            - env_var: PYTHON_VERSION
+              values: [''3.8'', ''3.9'']
           commands:
-            - sem-version python 3.8
+            - sem-version python $PYTHON_VERSION
             - checkout
             - python -m pip install --upgrade pip
             - pip install invoke
