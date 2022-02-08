@@ -12,9 +12,9 @@ blocks:
           commands:
             - checkout
             - python -m pip install --upgrade pip
-            - 'PATH="$PATH:$HOME/.local/bin:$HOME/.poetry/bin"'
             - pip install invoke
             - invoke installpoetry
+            - 'PATH="$PATH:$HOME/.local/bin:$HOME/.poetry/bin"'
             - poetry config virtualenvs.create false
             - invoke installdeps
   - name: Test de versiones de Python
