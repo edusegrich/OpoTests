@@ -17,7 +17,8 @@ blocks:
             - invoke installpoetry
             - poetry config virtualenvs.create false
             - invoke installdeps
-    dependencies: []
+    dependencies:
+      - Test de versiones de Python
   - name: Test de versiones de Python
     task:
       jobs:
@@ -33,5 +34,4 @@ blocks:
           commands:
             - sem-version python 3.10
             - invoke test
-    dependencies:
-      - Instalación de herramientas
+    dependencies: []
