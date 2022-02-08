@@ -8,9 +8,8 @@ blocks:
   - name: Test versiones Python
     task:
       jobs:
-        - name: pytest
+        - name: Intalación de dependencias
           commands:
-            - sem-version python 3.8
             - checkout
             - python -m pip install --upgrade pip
             - pip install invoke
@@ -18,4 +17,15 @@ blocks:
             - 'PATH="$PATH:$HOME/.local/bin:$HOME/.poetry/bin"'
             - poetry config virtualenvs.create false
             - invoke installdeps
+        - name: Test Python 3.8
+          commands:
+            - sem-version python 3.8
+            - invoke test
+        - name: Test Python 3.9
+          commands:
+            - sem-version python 3.9
+            - invoke test
+        - name: Test Python 3.10
+          commands:
+            - sem-version python 3.10
             - invoke test
