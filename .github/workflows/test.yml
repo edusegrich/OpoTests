@@ -18,4 +18,4 @@ jobs:
 
       - name: Ejecucion de contenedor
         run:
-          invoke docker-run
+          docker run -t -v `pwd`:/app/test edusegrich/opotests
