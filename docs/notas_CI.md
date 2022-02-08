@@ -35,7 +35,7 @@ Después de probar su funcionamiento me dispuse a implementar el workflow con el
 ![Ejecución tests versiones Python](images/semaphoreci_no_compatible_python310.png)
 
 - Dispone de uso desde la nube. ✔️
-- El servicio no es gratuito pero proporciona una prueba de 14 días. :heavy_minus_sign:
+- El servicio no es gratuito pero proporciona una prueba de 14 días. ✔️
 - Tiene integración con GitHub. ✔️
 - No es compatible con `python3.10`. :x:
 - Es fácil de aprender y tiene buena [documentación](https://docs.semaphoreci.com/). ✔️
