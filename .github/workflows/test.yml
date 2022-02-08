@@ -1,0 +1,21 @@
+name: Testeo de codigo añadido
+
+on:
+  push:
+    paths:
+      - Dockerfile
+      - pyproject.toml
+      - tasks.py
+      - 'test/**'
+      - 'opotests/**'
+
+jobs:
+  testeo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comprobar repositorio
+        uses: actions/checkout@v2
+
+      - name: Ejecucion de contenedor
+        run:
+          invoke docker-run
