@@ -15,7 +15,7 @@ blocks:
             - python -m pip install --upgrade pip
             - pip install invoke
             - invoke installpoetry
-            - 'PATH="$PATH:/home/tester/.local/bin:/home/tester/.poetry/bin"'
+            - 'PATH="$PATH:$HOME/.local/bin:$HOME/.poetry/bin"'
             - poetry config virtualenvs.create false
             - invoke installdeps
             - invoke test
