@@ -9,9 +9,15 @@ blocks:
     task:
       jobs:
         - name: Instalación de herramientas + test
+          matrix:
+            - env_var: PYTHON_VERSION
+              values:
+                - '3.8'
+                - '3.9'
+                - '3.10'
           commands:
             - checkout
-            - sem-version python 3.8
+            - sem-version python $PYTHON_VERSION
             - python -m pip install --upgrade pip
             - 'PATH="$PATH:$HOME/.local/bin:$HOME/.poetry/bin"'
             - pip install invoke
