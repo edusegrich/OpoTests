@@ -1,4 +1,4 @@
-FROM python:3.8-alpine3.15
+FROM python:3.10-alpine3.15
 
 LABEL mantainer="Eduardo Segura Richart <edusr@correo.ugr.es>"
 
