@@ -20,4 +20,4 @@ blocks:
             - invoke installdeps
             - invoke test
     run:
-      when: 'change_in(''/'', {exclude: [''/docs'']})'
+      when: 'change_in(''/'', {default_branch: 'main'})'
