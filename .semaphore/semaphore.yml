@@ -32,4 +32,5 @@ blocks:
             - python -m pip install --upgrade pip
             - 'PATH="$PATH:$HOME/.local/bin:$HOME/.poetry/bin"'
             - pip install invoke
+            - invoke installpoetry
             - poetry config virtualenvs.create false
