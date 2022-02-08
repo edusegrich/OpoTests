@@ -1,0 +1,21 @@
+version: v1.0
+name: Python
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu2004
+blocks:
+  - name: Testeo de código
+    task:
+      jobs:
+        - name: Testeo
+          commands:
+            - sem-version python 3.8
+            - checkout
+            - python -m pip install --upgrade pip
+            - pip install invoke
+            - invoke installpoetry
+            - 'PATH="$PATH:/home/tester/.local/bin:/home/tester/.poetry/bin"'
+            - poetry config virtualenvs.create false
+            - invoke installdeps
+            - invoke test
