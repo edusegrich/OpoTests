@@ -22,8 +22,8 @@ blocks:
             - sem-version python 3.10
             - invoke test
     dependencies:
-      - 'Block #2'
-  - name: 'Block #2'
+      - Instalacion de dependencias
+  - name: Instalacion de dependencias
     dependencies: []
     task:
       jobs:
