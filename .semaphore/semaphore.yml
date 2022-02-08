@@ -8,26 +8,7 @@ blocks:
   - name: Test de versiones de Python
     task:
       jobs:
-        - name: Test Python 3.8
-          commands:
-            - sem-version python 3.8
-            - pip install invoke
-            - invoke test
-        - name: Test Python 3.9
-          commands:
-            - sem-version python 3.9
-            - invoke test
-        - name: Test Python 3.10
-          commands:
-            - sem-version python 3.10
-            - invoke test
-    dependencies:
-      - Instalacion de dependencias
-  - name: Instalacion de dependencias
-    dependencies: []
-    task:
-      jobs:
-        - name: 'Job #1'
+        - name: Instalación de herramientas
           commands:
             - checkout
             - python -m pip install --upgrade pip
@@ -35,3 +16,11 @@ blocks:
             - pip install invoke
             - invoke installpoetry
             - poetry config virtualenvs.create false
+    dependencies: []
+after_pipeline:
+  task:
+    jobs:
+      - name: Test Python 3.8
+        commands:
+          - sem-version python 3.8
+          - invoke test
