@@ -11,7 +11,6 @@ RUN adduser -S tester && chown tester . && \
     apk add curl
 
 USER tester
-
 ENV PATH="$PATH:/home/tester/.local/bin:/home/tester/.poetry/bin"
 
 RUN pip3 install invoke && \
