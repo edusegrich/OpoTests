@@ -20,4 +20,4 @@ blocks:
             - invoke installdeps
             - invoke test
     run:
-      when: 'change_in(''/opotests'', ''/test'', ''Dockerfile'', ''tasks.py'', ''pyproject.toml'', {default_branch: 'main'})'
+      when: 'change_in(''/opotests'', ''/test'', ''Dockerfile'', ''tasks.py'', ''pyproject.toml'')'
