@@ -20,4 +20,4 @@ blocks:
             - invoke installdeps
             - invoke test
     run:
-      when: "branch =~ '.*'" and 'change_in(''/'', {exclude: [''/docs'', ''README.md'']})'
+      when: branch =~ '.*'
