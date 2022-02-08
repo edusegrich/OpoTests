@@ -12,14 +12,12 @@ blocks:
           commands:
             - checkout
             - python -m pip install --upgrade pip
-            - cache clear
+            - 'PATH="$PATH:$HOME/.local/bin:$HOME/.poetry/bin"'
             - pip install invoke
             - invoke installpoetry
-            - 'PATH="$PATH:$HOME/.local/bin:$HOME/.poetry/bin"'
             - poetry config virtualenvs.create false
             - invoke installdeps
-    dependencies:
-      - Test de versiones de Python
+    dependencies: []
   - name: Test de versiones de Python
     task:
       jobs:
@@ -35,4 +33,5 @@ blocks:
           commands:
             - sem-version python 3.10
             - invoke test
-    dependencies: []
+    dependencies:
+      - Instalación de herramientas
