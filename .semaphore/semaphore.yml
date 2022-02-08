@@ -11,12 +11,12 @@ blocks:
         - name: Instalación de herramientas + test
           commands:
             - checkout
+            - sem-version python 3.8
             - python -m pip install --upgrade pip
             - 'PATH="$PATH:$HOME/.local/bin:$HOME/.poetry/bin"'
             - pip install invoke
             - invoke installpoetry
             - poetry config virtualenvs.create false
             - invoke installdeps
-            - sem-version python 3.8
             - invoke test
     dependencies: []
