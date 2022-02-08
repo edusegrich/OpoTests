@@ -7,19 +7,7 @@ agent:
 blocks:
   - name: Instalación de herramientas
     task:
-      jobs:
-        - name: Gestor Tareas +  Gestor Dependencias
-          commands:
-            - checkout
-            - python -m pip install --upgrade pip
-            - cache clear
-            - pip install invoke
-            - invoke installpoetry
-            - 'PATH="$PATH:$HOME/.local/bin:$HOME/.poetry/bin"'
-            - poetry config virtualenvs.create false
-            - invoke installdeps
-    skip:
-      when: branch = 'master'
+      jobs: []
   - name: Test de versiones de Python
     task:
       jobs:
