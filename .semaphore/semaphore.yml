@@ -16,11 +16,6 @@ blocks:
             - pip install invoke
             - invoke installpoetry
             - poetry config virtualenvs.create false
+            - sem-version python 3.8
+            - invoke test
     dependencies: []
-after_pipeline:
-  task:
-    jobs:
-      - name: Test Python 3.8
-        commands:
-          - sem-version python 3.8
-          - invoke test
