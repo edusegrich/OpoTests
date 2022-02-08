@@ -47,7 +47,7 @@ El registro en este sistema es similar al descrito con Semaphore CI ya que cuent
 
 Al comenzar a desarrollar el workflow, me ha llamado la atención la facilidad con la que lo he podido diseñar ya que el propio sistema te pregunta el lenguaje de programación con el que se está desarrollando el pryecto y te sugiere hacer un workflow para la comprobación del funcionamiento con distintas versiones, ofreciéndote una plantilla que prácticamente solo hay que rellenarla con nuestras necesidades (instalación de gestores de tareas y dependencias).
 
-Al ejecutar los tests se ha producido un error en el que indica que se requieren privilegios del host para ejecutar el código con paralelismo. Para poder solicitar dichos privilegios es necesario rellenar y enviar un formulario.
+Al ejecutar los tests se ha producido un error en el que indica que se requieren privilegios del host para ejecutar el código con paralelismo. Para poder solicitar dichos privilegios es necesario rellenar y enviar un formulario. A pesar de mandar los datos solicitados en el formulario, no hay ningún tipo de *feedback* por parte de la plataforma.
 
 ![Error paralelismo Azure](images/azure_error_paralelismo.png)
 
@@ -87,5 +87,5 @@ No se me hizo difícil aprender a desarrollar #33 con GitHub Actions en el objet
 
 ## Elección
 Después de haber probado varios sistemas de integración continua, he de decir que he descubierto un nuevo mundo de herramientas para el desarrollo software y, el hecho de ser un principiante en ello me ha hecho saber distinguir con facilidad qué opciones me gustan más sobre otras. Por tanto, y enfocando el objetivo que queremos abordar, se ha optado por las siguientes soluciones:
-- **Semaphore CI** se utilizará para testear código que se añada al proyecto (python3.8).
-- **GitHub Actions** se utilizará para testear diferentes versiones de python.
+- **GitHub Actions** se utilizará para testear código que se añada al proyecto en `python3.10`.
+- **Semaphore CI** se utilizará para testear otras versiones de python (`python3.8` y `python3.9`).
