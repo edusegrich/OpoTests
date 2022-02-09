@@ -9,8 +9,6 @@ blocks:
     task:
       jobs:
         - name: Testeo
-          run:
-            when: 'change_in(''/'', {exclude: [''/docs/''], default_branch: ''main''})'
           matrix:
             - env_var: PYTHON_VERSION
               values:
