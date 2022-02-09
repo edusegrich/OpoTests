@@ -64,7 +64,7 @@ Travis CI es un sistema de Integración Continua de pago. Cuenta con una prueba 
 ### Buddy
 Buddy es un sistema de Integración Continua bastante distinto a los ya comentados. En este sistema no se configura un fichero '.yaml' directamente, sino que a través de una interfaz gráfica se van ajustando los parámetros en base al workflow que deseamos.
 
-Su uso es desde la nube, es gratuito y tiene integración con GitHub. Además, cuenta con un gran número de versiones de python.
+Su uso es desde la nube, es gratuito y tiene integración con GitHub. Además, cuenta con un gran número de versiones de python. 
 
 ![Versiones python Buddy](images/buddy_versiones_python.png)
 
