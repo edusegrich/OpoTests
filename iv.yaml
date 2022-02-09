@@ -6,3 +6,5 @@ entidad:
 automatizar:
     fichero: tasks.py
     orden: invoke
+test: test/test_examenes.py
+CI: .semaphore/semaphore.yml
