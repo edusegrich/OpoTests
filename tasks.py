@@ -13,7 +13,7 @@ def installdeps(c):
     """
     Tarea para instalar las dependencias del proyecto
     """
-    run("poetry install", shell="/bin/sh")
+    run("poetry install", shell="/bin/sh") 
 
 @task
 def check(c):
