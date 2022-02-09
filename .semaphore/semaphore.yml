@@ -9,6 +9,8 @@ blocks:
     task:
       jobs:
         - name: Testeo
+          run:
+            when: 'change_in(''/'', {exclude: [''/docs/''], default_branch: ''main''})'
           matrix:
             - env_var: PYTHON_VERSION
               values:
@@ -24,5 +26,3 @@ blocks:
             - poetry config virtualenvs.create false
             - invoke installdeps
             - invoke test
-      run:
-        when: 'change_in(''/'', {exclude: [''/docs/''], default_branch: ''main''})'
