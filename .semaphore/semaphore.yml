@@ -24,5 +24,5 @@ blocks:
             - poetry config virtualenvs.create false
             - invoke installdeps
             - invoke test
-          run:
-            when: 'change_in(''/'', {exclude: [''/docs/''], default_branch: ''main''})'
+      run:
+        when: 'change_in(''/'', {exclude: [''/docs/''], default_branch: ''main''})'
