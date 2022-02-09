@@ -25,4 +25,4 @@ blocks:
             - invoke installdeps
             - invoke test
     run:
-      when: 'change_in(''/'', {exclude: [''/docs/'', ''*.md''], default_branch: ''main''})'
+      when: 'change_in(''/opotests'', ''test'', ''tasks.py'', ''pyproject.toml'', {default_branch: ''main''})'
