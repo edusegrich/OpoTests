@@ -79,4 +79,7 @@ Se puede consultar la justificación de la elección del [gestor de dependencias
 Se puede consultar la justificación de la elección del [gestor de tareas](docs/justificacion_gestor_tareas.md) del proyecto.
 
 ### Imagen base de Docker :dvd:
-Se puede consultar la justificación de la elección de la [image base de Docker](docs/justificacion_imagen_docker.md)
+Se puede consultar la justificación de la elección de la [image base de Docker](docs/justificacion_imagen_docker.md).
+
+### Sistemas de Integración Continua
+El análisis de sistemas de integración continua y la elección para el proyecto se puede consultar en las [notas de CI](/docs/notas_CI.md).
